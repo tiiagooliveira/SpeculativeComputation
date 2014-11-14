@@ -1,0 +1,472 @@
+Abr 13, 2014 4:04:36 PM jade.core.Runtime beginContainer
+INFO: ----------------------------------
+    This is JADE 4.3.1 - revision 6695 of 2013/12/03 14:41:54
+    downloaded in Open Source, under LGPL restrictions,
+    at http://jade.tilab.com/
+----------------------------------------
+Abr 13, 2014 4:04:36 PM jade.imtp.leap.LEAPIMTPManager initialize
+INFO: Listening for intra-platform commands on address:
+- jicp://136.187.145.111:1099
+
+Abr 13, 2014 4:04:36 PM jade.core.BaseService init
+INFO: Service jade.core.management.AgentManagement initialized
+Abr 13, 2014 4:04:36 PM jade.core.BaseService init
+INFO: Service jade.core.messaging.Messaging initialized
+Abr 13, 2014 4:04:36 PM jade.core.BaseService init
+INFO: Service jade.core.resource.ResourceManagement initialized
+Abr 13, 2014 4:04:36 PM jade.core.BaseService init
+INFO: Service jade.core.mobility.AgentMobility initialized
+Abr 13, 2014 4:04:36 PM jade.core.BaseService init
+INFO: Service jade.core.event.Notification initialized
+Abr 13, 2014 4:04:37 PM jade.mtp.http.HTTPServer <init>
+INFO: HTTP-MTP Using XML parser com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser
+Abr 13, 2014 4:04:37 PM jade.core.messaging.MessagingService boot
+INFO: MTP addresses:
+http://Tiago-Samsung:7778/acc
+Abr 13, 2014 4:04:37 PM jade.core.AgentContainerImpl joinPlatform
+INFO: --------------------------------------
+Agent container Main-Container@136.187.145.111 is ready.
+--------------------------------------------
+pis: pis is active!
+cdss: cdss is active!
+cp: cp is active!
+cdss:Initializing the Speculative Computation Module.
+%     library(error) compiled into error 0.00 sec, 81 clauses
+%     library(pairs) compiled into pairs 0.00 sec, 22 clauses
+%    library(lists) compiled into lists 0.02 sec, 206 clauses
+%    library(occurs) compiled into occurs 0.02 sec, 14 clauses
+%   library(apply_macros) compiled into apply_macros 0.03 sec, 252 clauses
+%   library(assoc) compiled into assoc 0.00 sec, 103 clauses
+%  library(clpfd) compiled into clpfd 0.19 sec, 2,743 clauses
+%  library(random) compiled into random 0.00 sec, 44 clauses
+Warning: c:/users/tiago/documents/workspace/speculativecomputationsystem/spc_componentv2.pl:37:
+	Singleton variables: [Question]
+Warning: c:/users/tiago/documents/workspace/speculativecomputationsystem/spc_componentv2.pl:47:
+	Singleton variables: [ParentList,CL,OD,IA,X,F]
+Warning: c:/users/tiago/documents/workspace/speculativecomputationsystem/spc_componentv2.pl:47:
+	Singleton variable in \+: ParentList
+	Singleton variable in \+: CL
+	Singleton variable in \+: OD
+	Singleton variable in \+: IA
+	Singleton variable in \+: X
+	Singleton variable in \+: F
+Warning: c:/users/tiago/documents/workspace/speculativecomputationsystem/spc_componentv2.pl:53:
+	Singleton variables: [R]
+Warning: c:/users/tiago/documents/workspace/speculativecomputationsystem/spc_componentv2.pl:58:
+	Singleton variables: [ID]
+Warning: c:/users/tiago/documents/workspace/speculativecomputationsystem/spc_componentv2.pl:73:
+	Singleton variables: [A]
+Warning: c:/users/tiago/documents/workspace/speculativecomputationsystem/spc_componentv2.pl:74:
+	Singleton variables: [A]
+Warning: c:/users/tiago/documents/workspace/speculativecomputationsystem/spc_componentv2.pl:121:
+	Singleton variables: [LNewResult]
+Warning: c:/users/tiago/documents/workspace/speculativecomputationsystem/spc_componentv2.pl:131:
+	Singleton variables: [LNewResult]
+Warning: c:/users/tiago/documents/workspace/speculativecomputationsystem/spc_componentv2.pl:143:
+	Singleton variables: [V]
+Warning: c:/users/tiago/documents/workspace/speculativecomputationsystem/spc_componentv2.pl:147:
+	Singleton variables: [V,C]
+Warning: c:/users/tiago/documents/workspace/speculativecomputationsystem/spc_componentv2.pl:153:
+	Singleton variables: [V]
+Warning: c:/users/tiago/documents/workspace/speculativecomputationsystem/spc_componentv2.pl:158:
+	Singleton variables: [Variable,Exp]
+Warning: c:/users/tiago/documents/workspace/speculativecomputationsystem/spc_componentv2.pl:175:
+	Singleton variables: [A,B]
+Warning: c:/users/tiago/documents/workspace/speculativecomputationsystem/spc_componentv2.pl:179:
+	Singleton variables: [PREVIOUS]
+Warning: c:/users/tiago/documents/workspace/speculativecomputationsystem/spc_componentv2.pl:185:
+	Singleton variables: [F]
+Warning: c:/users/tiago/documents/workspace/speculativecomputationsystem/spc_componentv2.pl:199:
+	Singleton variables: [T,ConstraintList]
+Warning: c:/users/tiago/documents/workspace/speculativecomputationsystem/spc_componentv2.pl:199:
+	Singleton variable in branch: T
+	Singleton variable in branch: ConstraintList
+Warning: c:/users/tiago/documents/workspace/speculativecomputationsystem/spc_componentv2.pl:271:
+	Singleton variables: [OldID,ParentProcessID,OD,IA,VerifiedCL,X,F]
+% C:/Users/Tiago/Documents/workspace/SpeculativeComputationSystem/spc_componentv2.pl compiled 0.22 sec, 2,849 clauses
+cdss:Initializing the belief set.
+Warning: c:/users/tiago/documents/workspace/speculativecomputationsystem/casestudy1v2.pl:26:
+	Singleton variables: [Value2]
+% casestudy1v2 compiled 0.00 sec, 36 clauses
+{}
+cdss:The current belief set is:
+:- dynamic cbs/4.
+
+cbs(t(A)@pis, A, expression(in_set([t1]), list), default).
+cbs(n(A)@pis, A, expression(in_set([n0]), list), default).
+cbs(m(A)@pis, A, expression(in_set([m0]), list), default).
+cbs(ex(a01, A)@cp, A, expression(A#=1, regular), default).
+cbs(ex(a02, A)@cp, A, expression(A#=1, regular), default).
+cbs(ex(a03, A)@cp, A, expression(A#=0, regular), default).
+cbs(ex(a04, A)@cp, A, expression(A#=0, regular), default).
+
+{}
+cdss: The set of processes is:
+:- dynamic process/7.
+
+process(1, [], [nt(q01, A)], [], [], [], nt(q01, A)).
+process(2, [1], [alt(q01, A), tcv(A), gtt(q01, A)], [], [], [], nt(q01, A)).
+process(3, [1, 2], [tcv(a01), gtt(q01, a01)], [], [], [], nt(q01, a01)).
+process(4, [1, 2, 3], [constraint(t(A)@pis, A, [expression(in_set([tis]), list)]), gtt(q01, a01)], [], [], [], nt(q01, a01)).
+process(5, [1, 2, 3], [constraint(t(A)@pis, A, [expression(in_set([t1, t2]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a01)], [], [], [], nt(q01, a01)).
+process(6, [1, 2, 3, 5], [constraint(n(A)@pis, A, [expression(in_set([n0]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a01)], [t(_)@pis], [], [constraint(t(C)@pis, C, [expression(in_set([t1]), list)], default)], nt(q01, a01)).
+process(7, [1, 2, 3, 5], [constraint(n(A)@pis, A, [expression(in_set([n0]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a01), constraint(t(C)@pis, C, [expression(in_set([t2]), list)])], [], [], [], nt(q01, a01)).
+process(8, [1, 2, 3, 5, 6], [constraint(m(A)@pis, A, [expression(in_set([m0]), list)]), gtt(q01, a01)], [t(_)@pis, n(_)@pis], [], [constraint(t(B)@pis, B, [expression(in_set([t1]), list)], default), constraint(n(C)@pis, C, [expression(in_set([n0]), list)], default)], nt(q01, a01)).
+process(9, [1, 2, 3, 5, 6, 8], [gtt(q01, a01)], [t(_)@pis, n(_)@pis, m(_)@pis], [], [constraint(t(A)@pis, A, [expression(in_set([t1]), list)], default), constraint(n(B)@pis, B, [expression(in_set([n0]), list)], default), constraint(m(C)@pis, C, [expression(in_set([m0]), list)], default)], nt(q01, a01)).
+process(10, [1, 2, 3, 5, 6, 8, 9], [constraint(ex(a01, A)@cp, A, [expression(A#\=0, regular)])], [t(_)@pis, n(_)@pis, m(_)@pis], [gtt(q01, a01)], [constraint(t(B)@pis, B, [expression(in_set([t1]), list)], default), constraint(n(C)@pis, C, [expression(in_set([n0]), list)], default), constraint(m(D)@pis, D, [expression(in_set([m0]), list)], default)], nt(q01, a01)).
+process(11, [1, 2, 3, 5, 6, 8, 9, 10], [], [t(_)@pis, n(_)@pis, m(_)@pis, ex(a01, _)@cp], [gtt(q01, a01)], [constraint(t(A)@pis, A, [expression(in_set([t1]), list)], default), constraint(n(B)@pis, B, [expression(in_set([n0]), list)], default), constraint(m(C)@pis, C, [expression(in_set([m0]), list)], default), constraint(ex(a01, D)@cp, D, [expression(D#\=0, regular), expression(D#=1, regular)], default)], nt(q01, a01)).
+process(12, [1, 2, 3, 5, 6, 8, 9, 10], [constraint(ex(a01, A)@cp, A, [expression(A#\=0, regular), expression(A#\=1, regular)])], [t(_)@pis, n(_)@pis, m(_)@pis], [gtt(q01, a01)], [constraint(t(B)@pis, B, [expression(in_set([t1]), list)], default), constraint(n(C)@pis, C, [expression(in_set([n0]), list)], default), constraint(m(D)@pis, D, [expression(in_set([m0]), list)], default)], nt(q01, a01)).
+process(13, [1, 2], [tcv(a02), gtt(q01, a02)], [], [], [], nt(q01, a02)).
+process(14, [1, 2, 13], [constraint(t(A)@pis, A, [expression(in_set([t3]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a02)], [], [], [], nt(q01, a02)).
+process(15, [1, 2], [tcv(a03), gtt(q01, a03)], [], [], [], nt(q01, a03)).
+process(16, [1, 2, 15], [constraint(t(A)@pis, A, [expression(in_set([t4]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a03)], [], [], [], nt(q01, a03)).
+process(17, [1, 2], [tcv(a04), gtt(q01, a04)], [], [], [], nt(q01, a04)).
+process(18, [1, 2, 17], [constraint(t(A)@pis, A, [expression(in_set([t1, t2, t3, t4]), list)]), constraint(n(B)@pis, B, [expression(in_set([n1, n2]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a04)], [], [], [], nt(q01, a04)).
+process(19, [1, 2, 17, 18], [constraint(n(A)@pis, A, [expression(in_set([n1, n2]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a04)], [t(_)@pis], [], [constraint(t(C)@pis, C, [expression(in_set([t1]), list)], default)], nt(q01, a04)).
+process(20, [1, 2, 17, 18], [constraint(n(A)@pis, A, [expression(in_set([n1, n2]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a04), constraint(t(C)@pis, C, [expression(in_set([t2, t3, t4]), list)])], [], [], [], nt(q01, a04)).
+
+{}
+cdss: The set of active processes is:
+:- dynamic active/1.
+
+active(process(11, [1, 2, 3, 5, 6, 8, 9, 10], [], [t(_)@pis, n(_)@pis, m(_)@pis, ex(a01, _)@cp], [gtt(q01, a01)], [constraint(t(A)@pis, A, [expression(in_set([t1]), list)], default), constraint(n(B)@pis, B, [expression(in_set([n0]), list)], default), constraint(m(C)@pis, C, [expression(in_set([m0]), list)], default), constraint(ex(a01, D)@cp, D, [expression(D#\=0, regular), expression(D#=1, regular)], default)], nt(q01, a01))).
+
+{}
+cdss: The set of suspended processes is:
+:- dynamic suspended/2.
+
+suspended(t(A)@pis, process(4, [1, 2, 3], [constraint(t(A)@pis, A, [expression(in_set([tis]), list)]), gtt(q01, a01)], [], [], [], nt(q01, a01))).
+suspended(t(C)@pis, process(7, [1, 2, 3, 5], [constraint(n(A)@pis, A, [expression(in_set([n0]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a01), constraint(t(C)@pis, C, [expression(in_set([t2]), list)])], [], [], [], nt(q01, a01))).
+suspended(ex(a01, A)@cp, process(12, [1, 2, 3, 5, 6, 8, 9, 10], [constraint(ex(a01, A)@cp, A, [expression(A#\=0, regular), expression(A#\=1, regular)])], [t(_)@pis, n(_)@pis, m(_)@pis], [gtt(q01, a01)], [constraint(t(B)@pis, B, [expression(in_set([t1]), list)], default), constraint(n(C)@pis, C, [expression(in_set([n0]), list)], default), constraint(m(D)@pis, D, [expression(in_set([m0]), list)], default)], nt(q01, a01))).
+suspended(t(A)@pis, process(14, [1, 2, 13], [constraint(t(A)@pis, A, [expression(in_set([t3]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a02)], [], [], [], nt(q01, a02))).
+suspended(t(A)@pis, process(16, [1, 2, 15], [constraint(t(A)@pis, A, [expression(in_set([t4]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a03)], [], [], [], nt(q01, a03))).
+suspended(t(C)@pis, process(20, [1, 2, 17, 18], [constraint(n(A)@pis, A, [expression(in_set([n1, n2]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a04), constraint(t(C)@pis, C, [expression(in_set([t2, t3, t4]), list)])], [], [], [], nt(q01, a04))).
+suspended(n(A)@pis, process(19, [1, 2, 17, 18], [constraint(n(A)@pis, A, [expression(in_set([n1, n2]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a04)], [t(_)@pis], [], [constraint(t(C)@pis, C, [expression(in_set([t1]), list)], default)], nt(q01, a04))).
+
+{}
+cdss: The set of terminated processes is:
+:- dynamic terminated/1.
+
+
+:- dynamic terminated/2.
+
+
+{}
+cdss:Asked the value of t from pis.
+pis:Received a question from cdss.
+cdss:Asked the value of n from pis.
+pis:The question is what is the value of t.
+pis:The answer for the value of t is not currently available.
+cdss:Asked the value of m from pis.
+pis:There is an answer for the value of t available.
+cdss:Asked the value of ex(a01) from cp.
+cp:Received a question from cdss.
+cp:The question is what is the value of ex(a01).
+cp:The answer for the value of ex(a01) is not currently available.
+pis:Sent answer for the value of t to cdss.
+pis:Received a question from cdss.
+pis:The question is what is the value of n.
+pis:The answer for the value of n is not currently available.
+cdss:Received message from pis with the answer (t,in_set,t1).
+cdss:Asserting answer (t,in_set,t1) to the Speculative Computation Module.
+true
+cdss: The answer set is:
+:- dynamic answer/2.
+
+answer(t, constraint(t(A)@pis, A, expression(in_set([t1]), list))).
+
+{}
+cdss: The belief set is:
+:- dynamic cbs/4.
+
+cbs(n(A)@pis, A, expression(in_set([n0]), list), default).
+cbs(m(A)@pis, A, expression(in_set([m0]), list), default).
+cbs(ex(a01, A)@cp, A, expression(A#=1, regular), default).
+cbs(ex(a02, A)@cp, A, expression(A#=1, regular), default).
+cbs(ex(a03, A)@cp, A, expression(A#=0, regular), default).
+cbs(ex(a04, A)@cp, A, expression(A#=0, regular), default).
+cbs(t(A)@pis, A, expression(in_set([t1]), list), revised).
+
+{}
+cdss: The set of processes is:
+:- dynamic process/7.
+
+process(1, [], [nt(q01, A)], [], [], [], nt(q01, A)).
+process(2, [1], [alt(q01, A), tcv(A), gtt(q01, A)], [], [], [], nt(q01, A)).
+process(3, [1, 2], [tcv(a01), gtt(q01, a01)], [], [], [], nt(q01, a01)).
+process(4, [1, 2, 3], [constraint(t(A)@pis, A, [expression(in_set([tis]), list)]), gtt(q01, a01)], [], [], [], nt(q01, a01)).
+process(5, [1, 2, 3], [constraint(t(A)@pis, A, [expression(in_set([t1, t2]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a01)], [], [], [], nt(q01, a01)).
+process(6, [1, 2, 3, 5], [constraint(n(A)@pis, A, [expression(in_set([n0]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a01)], [t(_)@pis], [], [constraint(t(C)@pis, C, [expression(in_set([t1]), list)], default)], nt(q01, a01)).
+process(7, [1, 2, 3, 5], [constraint(n(A)@pis, A, [expression(in_set([n0]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a01), constraint(t(C)@pis, C, [expression(in_set([t2]), list)])], [], [], [], nt(q01, a01)).
+process(8, [1, 2, 3, 5, 6], [constraint(m(A)@pis, A, [expression(in_set([m0]), list)]), gtt(q01, a01)], [t(_)@pis, n(_)@pis], [], [constraint(t(B)@pis, B, [expression(in_set([t1]), list)], default), constraint(n(C)@pis, C, [expression(in_set([n0]), list)], default)], nt(q01, a01)).
+process(9, [1, 2, 3, 5, 6, 8], [gtt(q01, a01)], [t(_)@pis, n(_)@pis, m(_)@pis], [], [constraint(t(A)@pis, A, [expression(in_set([t1]), list)], default), constraint(n(B)@pis, B, [expression(in_set([n0]), list)], default), constraint(m(C)@pis, C, [expression(in_set([m0]), list)], default)], nt(q01, a01)).
+process(10, [1, 2, 3, 5, 6, 8, 9], [constraint(ex(a01, A)@cp, A, [expression(A#\=0, regular)])], [t(_)@pis, n(_)@pis, m(_)@pis], [gtt(q01, a01)], [constraint(t(B)@pis, B, [expression(in_set([t1]), list)], default), constraint(n(C)@pis, C, [expression(in_set([n0]), list)], default), constraint(m(D)@pis, D, [expression(in_set([m0]), list)], default)], nt(q01, a01)).
+process(11, [1, 2, 3, 5, 6, 8, 9, 10], [], [t(_)@pis, n(_)@pis, m(_)@pis, ex(a01, _)@cp], [gtt(q01, a01)], [constraint(t(A)@pis, A, [expression(in_set([t1]), list)], default), constraint(n(B)@pis, B, [expression(in_set([n0]), list)], default), constraint(m(C)@pis, C, [expression(in_set([m0]), list)], default), constraint(ex(a01, D)@cp, D, [expression(D#\=0, regular), expression(D#=1, regular)], default)], nt(q01, a01)).
+process(12, [1, 2, 3, 5, 6, 8, 9, 10], [constraint(ex(a01, A)@cp, A, [expression(A#\=0, regular), expression(A#\=1, regular)])], [t(_)@pis, n(_)@pis, m(_)@pis], [gtt(q01, a01)], [constraint(t(B)@pis, B, [expression(in_set([t1]), list)], default), constraint(n(C)@pis, C, [expression(in_set([n0]), list)], default), constraint(m(D)@pis, D, [expression(in_set([m0]), list)], default)], nt(q01, a01)).
+process(13, [1, 2], [tcv(a02), gtt(q01, a02)], [], [], [], nt(q01, a02)).
+process(14, [1, 2, 13], [constraint(t(A)@pis, A, [expression(in_set([t3]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a02)], [], [], [], nt(q01, a02)).
+process(15, [1, 2], [tcv(a03), gtt(q01, a03)], [], [], [], nt(q01, a03)).
+process(16, [1, 2, 15], [constraint(t(A)@pis, A, [expression(in_set([t4]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a03)], [], [], [], nt(q01, a03)).
+process(17, [1, 2], [tcv(a04), gtt(q01, a04)], [], [], [], nt(q01, a04)).
+process(18, [1, 2, 17], [constraint(t(A)@pis, A, [expression(in_set([t1, t2, t3, t4]), list)]), constraint(n(B)@pis, B, [expression(in_set([n1, n2]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a04)], [], [], [], nt(q01, a04)).
+process(19, [1, 2, 17, 18], [constraint(n(A)@pis, A, [expression(in_set([n1, n2]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a04)], [t(_)@pis], [], [constraint(t(C)@pis, C, [expression(in_set([t1]), list)], default)], nt(q01, a04)).
+process(20, [1, 2, 17, 18], [constraint(n(A)@pis, A, [expression(in_set([n1, n2]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a04), constraint(t(C)@pis, C, [expression(in_set([t2, t3, t4]), list)])], [], [], [], nt(q01, a04)).
+
+{}
+cdss: The set of active processes is:
+:- dynamic active/1.
+
+active(process(21, [1, 2, 3, 5, 6, 8, 9, 10, 11], [], [n(_)@pis, m(_)@pis, ex(a01, _)@cp], [gtt(q01, a01)], [constraint(n(A)@pis, A, [expression(in_set([n0]), list)], default), constraint(m(B)@pis, B, [expression(in_set([m0]), list)], default), constraint(ex(a01, C)@cp, C, [expression(C#\=0, regular), expression(C#=1, regular)], default), constraint(t(D)@pis, D, [expression(in_set([t1]), list)], revised)], nt(q01, a01))).
+
+{}
+cdss: The set of suspended processes is:
+:- dynamic suspended/2.
+
+suspended(ex(a01, A)@cp, process(24, [1, 2, 3, 5, 6, 8, 9, 10, 12], [constraint(ex(a01, A)@cp, A, [expression(A#\=0, regular), expression(A#\=1, regular)])], [n(_)@pis, m(_)@pis], [gtt(q01, a01)], [constraint(n(B)@pis, B, [expression(in_set([n0]), list)], default), constraint(m(C)@pis, C, [expression(in_set([m0]), list)], default), constraint(t(D)@pis, D, [expression(in_set([t1]), list)], revised)], nt(q01, a01))).
+suspended(n(A)@pis, process(28, [1, 2, 17, 18, 19], [constraint(n(A)@pis, A, [expression(in_set([n1, n2]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a04)], [], [], [constraint(t(C)@pis, C, [expression(in_set([t1]), list)], revised)], nt(q01, a04))).
+
+{}
+cdss: The set of terminated processes is:
+:- dynamic terminated/1.
+
+terminated(process(4, [1, 2, 3], [constraint(t(A)@pis, A, [expression(in_set([tis]), list)]), gtt(q01, a01)], [], [], [], nt(q01, a01))).
+terminated(process(7, [1, 2, 3, 5], [constraint(n(A)@pis, A, [expression(in_set([n0]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a01), constraint(t(C)@pis, C, [expression(in_set([t2]), list)])], [], [], [], nt(q01, a01))).
+terminated(process(14, [1, 2, 13], [constraint(t(A)@pis, A, [expression(in_set([t3]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a02)], [], [], [], nt(q01, a02))).
+terminated(process(16, [1, 2, 15], [constraint(t(A)@pis, A, [expression(in_set([t4]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a03)], [], [], [], nt(q01, a03))).
+terminated(process(20, [1, 2, 17, 18], [constraint(n(A)@pis, A, [expression(in_set([n1, n2]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a04), constraint(t(C)@pis, C, [expression(in_set([t2, t3, t4]), list)])], [], [], [], nt(q01, a04))).
+
+:- dynamic terminated/2.
+
+
+{}
+pis:There is an answer for the value of n available.
+pis:Sent answer for the value of n to cdss.
+pis:Received a question from cdss.
+pis:The question is what is the value of m.
+pis:The answer for the value of m is not currently available.
+cdss:Received message from pis with the answer (n,in_set,n0).
+cdss:Asserting answer (n,in_set,n0) to the Speculative Computation Module.
+true
+cdss: The answer set is:
+:- dynamic answer/2.
+
+answer(t, constraint(t(A)@pis, A, expression(in_set([t1]), list))).
+answer(n, constraint(n(A)@pis, A, expression(in_set([n0]), list))).
+
+{}
+cdss: The belief set is:
+:- dynamic cbs/4.
+
+cbs(m(A)@pis, A, expression(in_set([m0]), list), default).
+cbs(ex(a01, A)@cp, A, expression(A#=1, regular), default).
+cbs(ex(a02, A)@cp, A, expression(A#=1, regular), default).
+cbs(ex(a03, A)@cp, A, expression(A#=0, regular), default).
+cbs(ex(a04, A)@cp, A, expression(A#=0, regular), default).
+cbs(t(A)@pis, A, expression(in_set([t1]), list), revised).
+cbs(n(A)@pis, A, expression(in_set([n0]), list), revised).
+
+{}
+cdss: The set of processes is:
+:- dynamic process/7.
+
+process(1, [], [nt(q01, A)], [], [], [], nt(q01, A)).
+process(2, [1], [alt(q01, A), tcv(A), gtt(q01, A)], [], [], [], nt(q01, A)).
+process(3, [1, 2], [tcv(a01), gtt(q01, a01)], [], [], [], nt(q01, a01)).
+process(4, [1, 2, 3], [constraint(t(A)@pis, A, [expression(in_set([tis]), list)]), gtt(q01, a01)], [], [], [], nt(q01, a01)).
+process(5, [1, 2, 3], [constraint(t(A)@pis, A, [expression(in_set([t1, t2]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a01)], [], [], [], nt(q01, a01)).
+process(6, [1, 2, 3, 5], [constraint(n(A)@pis, A, [expression(in_set([n0]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a01)], [t(_)@pis], [], [constraint(t(C)@pis, C, [expression(in_set([t1]), list)], default)], nt(q01, a01)).
+process(7, [1, 2, 3, 5], [constraint(n(A)@pis, A, [expression(in_set([n0]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a01), constraint(t(C)@pis, C, [expression(in_set([t2]), list)])], [], [], [], nt(q01, a01)).
+process(8, [1, 2, 3, 5, 6], [constraint(m(A)@pis, A, [expression(in_set([m0]), list)]), gtt(q01, a01)], [t(_)@pis, n(_)@pis], [], [constraint(t(B)@pis, B, [expression(in_set([t1]), list)], default), constraint(n(C)@pis, C, [expression(in_set([n0]), list)], default)], nt(q01, a01)).
+process(9, [1, 2, 3, 5, 6, 8], [gtt(q01, a01)], [t(_)@pis, n(_)@pis, m(_)@pis], [], [constraint(t(A)@pis, A, [expression(in_set([t1]), list)], default), constraint(n(B)@pis, B, [expression(in_set([n0]), list)], default), constraint(m(C)@pis, C, [expression(in_set([m0]), list)], default)], nt(q01, a01)).
+process(10, [1, 2, 3, 5, 6, 8, 9], [constraint(ex(a01, A)@cp, A, [expression(A#\=0, regular)])], [t(_)@pis, n(_)@pis, m(_)@pis], [gtt(q01, a01)], [constraint(t(B)@pis, B, [expression(in_set([t1]), list)], default), constraint(n(C)@pis, C, [expression(in_set([n0]), list)], default), constraint(m(D)@pis, D, [expression(in_set([m0]), list)], default)], nt(q01, a01)).
+process(11, [1, 2, 3, 5, 6, 8, 9, 10], [], [t(_)@pis, n(_)@pis, m(_)@pis, ex(a01, _)@cp], [gtt(q01, a01)], [constraint(t(A)@pis, A, [expression(in_set([t1]), list)], default), constraint(n(B)@pis, B, [expression(in_set([n0]), list)], default), constraint(m(C)@pis, C, [expression(in_set([m0]), list)], default), constraint(ex(a01, D)@cp, D, [expression(D#\=0, regular), expression(D#=1, regular)], default)], nt(q01, a01)).
+process(12, [1, 2, 3, 5, 6, 8, 9, 10], [constraint(ex(a01, A)@cp, A, [expression(A#\=0, regular), expression(A#\=1, regular)])], [t(_)@pis, n(_)@pis, m(_)@pis], [gtt(q01, a01)], [constraint(t(B)@pis, B, [expression(in_set([t1]), list)], default), constraint(n(C)@pis, C, [expression(in_set([n0]), list)], default), constraint(m(D)@pis, D, [expression(in_set([m0]), list)], default)], nt(q01, a01)).
+process(13, [1, 2], [tcv(a02), gtt(q01, a02)], [], [], [], nt(q01, a02)).
+process(14, [1, 2, 13], [constraint(t(A)@pis, A, [expression(in_set([t3]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a02)], [], [], [], nt(q01, a02)).
+process(15, [1, 2], [tcv(a03), gtt(q01, a03)], [], [], [], nt(q01, a03)).
+process(16, [1, 2, 15], [constraint(t(A)@pis, A, [expression(in_set([t4]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a03)], [], [], [], nt(q01, a03)).
+process(17, [1, 2], [tcv(a04), gtt(q01, a04)], [], [], [], nt(q01, a04)).
+process(18, [1, 2, 17], [constraint(t(A)@pis, A, [expression(in_set([t1, t2, t3, t4]), list)]), constraint(n(B)@pis, B, [expression(in_set([n1, n2]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a04)], [], [], [], nt(q01, a04)).
+process(19, [1, 2, 17, 18], [constraint(n(A)@pis, A, [expression(in_set([n1, n2]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a04)], [t(_)@pis], [], [constraint(t(C)@pis, C, [expression(in_set([t1]), list)], default)], nt(q01, a04)).
+process(20, [1, 2, 17, 18], [constraint(n(A)@pis, A, [expression(in_set([n1, n2]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a04), constraint(t(C)@pis, C, [expression(in_set([t2, t3, t4]), list)])], [], [], [], nt(q01, a04)).
+
+{}
+cdss: The set of active processes is:
+:- dynamic active/1.
+
+active(process(29, [1, 2, 3, 5, 6, 8, 9, 10, 11, 21], [], [m(_)@pis, ex(a01, _)@cp], [gtt(q01, a01)], [constraint(m(A)@pis, A, [expression(in_set([m0]), list)], default), constraint(ex(a01, B)@cp, B, [expression(B#\=0, regular), expression(B#=1, regular)], default), constraint(t(C)@pis, C, [expression(in_set([t1]), list)], revised), constraint(n(D)@pis, D, [expression(in_set([n0]), list)], revised)], nt(q01, a01))).
+
+{}
+cdss: The set of suspended processes is:
+:- dynamic suspended/2.
+
+suspended(ex(a01, A)@cp, process(30, [1, 2, 3, 5, 6, 8, 9, 10, 12, 24], [constraint(ex(a01, A)@cp, A, [expression(A#\=0, regular), expression(A#\=1, regular)])], [m(_)@pis], [gtt(q01, a01)], [constraint(m(B)@pis, B, [expression(in_set([m0]), list)], default), constraint(t(C)@pis, C, [expression(in_set([t1]), list)], revised), constraint(n(D)@pis, D, [expression(in_set([n0]), list)], revised)], nt(q01, a01))).
+
+{}
+cdss: The set of terminated processes is:
+:- dynamic terminated/1.
+
+terminated(process(4, [1, 2, 3], [constraint(t(A)@pis, A, [expression(in_set([tis]), list)]), gtt(q01, a01)], [], [], [], nt(q01, a01))).
+terminated(process(7, [1, 2, 3, 5], [constraint(n(A)@pis, A, [expression(in_set([n0]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a01), constraint(t(C)@pis, C, [expression(in_set([t2]), list)])], [], [], [], nt(q01, a01))).
+terminated(process(14, [1, 2, 13], [constraint(t(A)@pis, A, [expression(in_set([t3]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a02)], [], [], [], nt(q01, a02))).
+terminated(process(16, [1, 2, 15], [constraint(t(A)@pis, A, [expression(in_set([t4]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a03)], [], [], [], nt(q01, a03))).
+terminated(process(20, [1, 2, 17, 18], [constraint(n(A)@pis, A, [expression(in_set([n1, n2]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a04), constraint(t(C)@pis, C, [expression(in_set([t2, t3, t4]), list)])], [], [], [], nt(q01, a04))).
+terminated(process(28, [1, 2, 17, 18, 19], [constraint(n(A)@pis, A, [expression(in_set([n1, n2]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a04)], [], [], [constraint(t(C)@pis, C, [expression(in_set([t1]), list)], revised)], nt(q01, a04))).
+
+:- dynamic terminated/2.
+
+
+{}
+pis:There is an answer for the value of m available.
+pis:Sent answer for the value of m to cdss.
+cdss:Received message from pis with the answer (m,in_set,m0).
+cdss:Asserting answer (m,in_set,m0) to the Speculative Computation Module.
+true
+cdss: The answer set is:
+:- dynamic answer/2.
+
+answer(t, constraint(t(A)@pis, A, expression(in_set([t1]), list))).
+answer(n, constraint(n(A)@pis, A, expression(in_set([n0]), list))).
+answer(m, constraint(m(A)@pis, A, expression(in_set([m0]), list))).
+
+{}
+cdss: The belief set is:
+:- dynamic cbs/4.
+
+cbs(ex(a01, A)@cp, A, expression(A#=1, regular), default).
+cbs(ex(a02, A)@cp, A, expression(A#=1, regular), default).
+cbs(ex(a03, A)@cp, A, expression(A#=0, regular), default).
+cbs(ex(a04, A)@cp, A, expression(A#=0, regular), default).
+cbs(t(A)@pis, A, expression(in_set([t1]), list), revised).
+cbs(n(A)@pis, A, expression(in_set([n0]), list), revised).
+cbs(m(A)@pis, A, expression(in_set([m0]), list), revised).
+
+{}
+cdss: The set of processes is:
+:- dynamic process/7.
+
+process(1, [], [nt(q01, A)], [], [], [], nt(q01, A)).
+process(2, [1], [alt(q01, A), tcv(A), gtt(q01, A)], [], [], [], nt(q01, A)).
+process(3, [1, 2], [tcv(a01), gtt(q01, a01)], [], [], [], nt(q01, a01)).
+process(4, [1, 2, 3], [constraint(t(A)@pis, A, [expression(in_set([tis]), list)]), gtt(q01, a01)], [], [], [], nt(q01, a01)).
+process(5, [1, 2, 3], [constraint(t(A)@pis, A, [expression(in_set([t1, t2]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a01)], [], [], [], nt(q01, a01)).
+process(6, [1, 2, 3, 5], [constraint(n(A)@pis, A, [expression(in_set([n0]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a01)], [t(_)@pis], [], [constraint(t(C)@pis, C, [expression(in_set([t1]), list)], default)], nt(q01, a01)).
+process(7, [1, 2, 3, 5], [constraint(n(A)@pis, A, [expression(in_set([n0]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a01), constraint(t(C)@pis, C, [expression(in_set([t2]), list)])], [], [], [], nt(q01, a01)).
+process(8, [1, 2, 3, 5, 6], [constraint(m(A)@pis, A, [expression(in_set([m0]), list)]), gtt(q01, a01)], [t(_)@pis, n(_)@pis], [], [constraint(t(B)@pis, B, [expression(in_set([t1]), list)], default), constraint(n(C)@pis, C, [expression(in_set([n0]), list)], default)], nt(q01, a01)).
+process(9, [1, 2, 3, 5, 6, 8], [gtt(q01, a01)], [t(_)@pis, n(_)@pis, m(_)@pis], [], [constraint(t(A)@pis, A, [expression(in_set([t1]), list)], default), constraint(n(B)@pis, B, [expression(in_set([n0]), list)], default), constraint(m(C)@pis, C, [expression(in_set([m0]), list)], default)], nt(q01, a01)).
+process(10, [1, 2, 3, 5, 6, 8, 9], [constraint(ex(a01, A)@cp, A, [expression(A#\=0, regular)])], [t(_)@pis, n(_)@pis, m(_)@pis], [gtt(q01, a01)], [constraint(t(B)@pis, B, [expression(in_set([t1]), list)], default), constraint(n(C)@pis, C, [expression(in_set([n0]), list)], default), constraint(m(D)@pis, D, [expression(in_set([m0]), list)], default)], nt(q01, a01)).
+process(11, [1, 2, 3, 5, 6, 8, 9, 10], [], [t(_)@pis, n(_)@pis, m(_)@pis, ex(a01, _)@cp], [gtt(q01, a01)], [constraint(t(A)@pis, A, [expression(in_set([t1]), list)], default), constraint(n(B)@pis, B, [expression(in_set([n0]), list)], default), constraint(m(C)@pis, C, [expression(in_set([m0]), list)], default), constraint(ex(a01, D)@cp, D, [expression(D#\=0, regular), expression(D#=1, regular)], default)], nt(q01, a01)).
+process(12, [1, 2, 3, 5, 6, 8, 9, 10], [constraint(ex(a01, A)@cp, A, [expression(A#\=0, regular), expression(A#\=1, regular)])], [t(_)@pis, n(_)@pis, m(_)@pis], [gtt(q01, a01)], [constraint(t(B)@pis, B, [expression(in_set([t1]), list)], default), constraint(n(C)@pis, C, [expression(in_set([n0]), list)], default), constraint(m(D)@pis, D, [expression(in_set([m0]), list)], default)], nt(q01, a01)).
+process(13, [1, 2], [tcv(a02), gtt(q01, a02)], [], [], [], nt(q01, a02)).
+process(14, [1, 2, 13], [constraint(t(A)@pis, A, [expression(in_set([t3]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a02)], [], [], [], nt(q01, a02)).
+process(15, [1, 2], [tcv(a03), gtt(q01, a03)], [], [], [], nt(q01, a03)).
+process(16, [1, 2, 15], [constraint(t(A)@pis, A, [expression(in_set([t4]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a03)], [], [], [], nt(q01, a03)).
+process(17, [1, 2], [tcv(a04), gtt(q01, a04)], [], [], [], nt(q01, a04)).
+process(18, [1, 2, 17], [constraint(t(A)@pis, A, [expression(in_set([t1, t2, t3, t4]), list)]), constraint(n(B)@pis, B, [expression(in_set([n1, n2]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a04)], [], [], [], nt(q01, a04)).
+process(19, [1, 2, 17, 18], [constraint(n(A)@pis, A, [expression(in_set([n1, n2]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a04)], [t(_)@pis], [], [constraint(t(C)@pis, C, [expression(in_set([t1]), list)], default)], nt(q01, a04)).
+process(20, [1, 2, 17, 18], [constraint(n(A)@pis, A, [expression(in_set([n1, n2]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a04), constraint(t(C)@pis, C, [expression(in_set([t2, t3, t4]), list)])], [], [], [], nt(q01, a04)).
+
+{}
+cdss: The set of active processes is:
+:- dynamic active/1.
+
+active(process(32, [1, 2, 3, 5, 6, 8, 9, 10, 11, 21, 29], [], [ex(a01, _)@cp], [gtt(q01, a01)], [constraint(ex(a01, A)@cp, A, [expression(A#\=0, regular), expression(A#=1, regular)], default), constraint(t(B)@pis, B, [expression(in_set([t1]), list)], revised), constraint(n(C)@pis, C, [expression(in_set([n0]), list)], revised), constraint(m(D)@pis, D, [expression(in_set([m0]), list)], revised)], nt(q01, a01))).
+
+{}
+cdss: The set of suspended processes is:
+:- dynamic suspended/2.
+
+suspended(ex(a01, A)@cp, process(33, [1, 2, 3, 5, 6, 8, 9, 10, 12, 24, 30], [constraint(ex(a01, A)@cp, A, [expression(A#\=0, regular), expression(A#\=1, regular)])], [], [gtt(q01, a01)], [constraint(t(B)@pis, B, [expression(in_set([t1]), list)], revised), constraint(n(C)@pis, C, [expression(in_set([n0]), list)], revised), constraint(m(D)@pis, D, [expression(in_set([m0]), list)], revised)], nt(q01, a01))).
+
+{}
+cdss: The set of terminated processes is:
+:- dynamic terminated/1.
+
+terminated(process(4, [1, 2, 3], [constraint(t(A)@pis, A, [expression(in_set([tis]), list)]), gtt(q01, a01)], [], [], [], nt(q01, a01))).
+terminated(process(7, [1, 2, 3, 5], [constraint(n(A)@pis, A, [expression(in_set([n0]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a01), constraint(t(C)@pis, C, [expression(in_set([t2]), list)])], [], [], [], nt(q01, a01))).
+terminated(process(14, [1, 2, 13], [constraint(t(A)@pis, A, [expression(in_set([t3]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a02)], [], [], [], nt(q01, a02))).
+terminated(process(16, [1, 2, 15], [constraint(t(A)@pis, A, [expression(in_set([t4]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a03)], [], [], [], nt(q01, a03))).
+terminated(process(20, [1, 2, 17, 18], [constraint(n(A)@pis, A, [expression(in_set([n1, n2]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a04), constraint(t(C)@pis, C, [expression(in_set([t2, t3, t4]), list)])], [], [], [], nt(q01, a04))).
+terminated(process(28, [1, 2, 17, 18, 19], [constraint(n(A)@pis, A, [expression(in_set([n1, n2]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a04)], [], [], [constraint(t(C)@pis, C, [expression(in_set([t1]), list)], revised)], nt(q01, a04))).
+
+:- dynamic terminated/2.
+
+
+{}
+cp:There is an answer for the value of ex(a01) available.
+cp:Sent answer for the value of ex(a01) to cdss.
+cdss:Received message from cp with the answer (ex(a01),equal,1).
+cdss:Asserting answer (ex(a01),equal,1) to the Speculative Computation Module.
+true
+cdss: The answer set is:
+:- dynamic answer/2.
+
+answer(t, constraint(t(A)@pis, A, expression(in_set([t1]), list))).
+answer(n, constraint(n(A)@pis, A, expression(in_set([n0]), list))).
+answer(m, constraint(m(A)@pis, A, expression(in_set([m0]), list))).
+answer('ex(a01)', constraint(ex(a01, A)@cp, A, expression(A#=1, regular))).
+
+{}
+cdss: The belief set is:
+:- dynamic cbs/4.
+
+cbs(ex(a02, A)@cp, A, expression(A#=1, regular), default).
+cbs(ex(a03, A)@cp, A, expression(A#=0, regular), default).
+cbs(ex(a04, A)@cp, A, expression(A#=0, regular), default).
+cbs(t(A)@pis, A, expression(in_set([t1]), list), revised).
+cbs(n(A)@pis, A, expression(in_set([n0]), list), revised).
+cbs(m(A)@pis, A, expression(in_set([m0]), list), revised).
+cbs(ex(a01, A)@cp, A, expression(A#=1, regular), revised).
+
+{}
+cdss: The set of processes is:
+:- dynamic process/7.
+
+process(1, [], [nt(q01, A)], [], [], [], nt(q01, A)).
+process(2, [1], [alt(q01, A), tcv(A), gtt(q01, A)], [], [], [], nt(q01, A)).
+process(3, [1, 2], [tcv(a01), gtt(q01, a01)], [], [], [], nt(q01, a01)).
+process(4, [1, 2, 3], [constraint(t(A)@pis, A, [expression(in_set([tis]), list)]), gtt(q01, a01)], [], [], [], nt(q01, a01)).
+process(5, [1, 2, 3], [constraint(t(A)@pis, A, [expression(in_set([t1, t2]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a01)], [], [], [], nt(q01, a01)).
+process(6, [1, 2, 3, 5], [constraint(n(A)@pis, A, [expression(in_set([n0]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a01)], [t(_)@pis], [], [constraint(t(C)@pis, C, [expression(in_set([t1]), list)], default)], nt(q01, a01)).
+process(7, [1, 2, 3, 5], [constraint(n(A)@pis, A, [expression(in_set([n0]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a01), constraint(t(C)@pis, C, [expression(in_set([t2]), list)])], [], [], [], nt(q01, a01)).
+process(8, [1, 2, 3, 5, 6], [constraint(m(A)@pis, A, [expression(in_set([m0]), list)]), gtt(q01, a01)], [t(_)@pis, n(_)@pis], [], [constraint(t(B)@pis, B, [expression(in_set([t1]), list)], default), constraint(n(C)@pis, C, [expression(in_set([n0]), list)], default)], nt(q01, a01)).
+process(9, [1, 2, 3, 5, 6, 8], [gtt(q01, a01)], [t(_)@pis, n(_)@pis, m(_)@pis], [], [constraint(t(A)@pis, A, [expression(in_set([t1]), list)], default), constraint(n(B)@pis, B, [expression(in_set([n0]), list)], default), constraint(m(C)@pis, C, [expression(in_set([m0]), list)], default)], nt(q01, a01)).
+process(10, [1, 2, 3, 5, 6, 8, 9], [constraint(ex(a01, A)@cp, A, [expression(A#\=0, regular)])], [t(_)@pis, n(_)@pis, m(_)@pis], [gtt(q01, a01)], [constraint(t(B)@pis, B, [expression(in_set([t1]), list)], default), constraint(n(C)@pis, C, [expression(in_set([n0]), list)], default), constraint(m(D)@pis, D, [expression(in_set([m0]), list)], default)], nt(q01, a01)).
+process(11, [1, 2, 3, 5, 6, 8, 9, 10], [], [t(_)@pis, n(_)@pis, m(_)@pis, ex(a01, _)@cp], [gtt(q01, a01)], [constraint(t(A)@pis, A, [expression(in_set([t1]), list)], default), constraint(n(B)@pis, B, [expression(in_set([n0]), list)], default), constraint(m(C)@pis, C, [expression(in_set([m0]), list)], default), constraint(ex(a01, D)@cp, D, [expression(D#\=0, regular), expression(D#=1, regular)], default)], nt(q01, a01)).
+process(12, [1, 2, 3, 5, 6, 8, 9, 10], [constraint(ex(a01, A)@cp, A, [expression(A#\=0, regular), expression(A#\=1, regular)])], [t(_)@pis, n(_)@pis, m(_)@pis], [gtt(q01, a01)], [constraint(t(B)@pis, B, [expression(in_set([t1]), list)], default), constraint(n(C)@pis, C, [expression(in_set([n0]), list)], default), constraint(m(D)@pis, D, [expression(in_set([m0]), list)], default)], nt(q01, a01)).
+process(13, [1, 2], [tcv(a02), gtt(q01, a02)], [], [], [], nt(q01, a02)).
+process(14, [1, 2, 13], [constraint(t(A)@pis, A, [expression(in_set([t3]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a02)], [], [], [], nt(q01, a02)).
+process(15, [1, 2], [tcv(a03), gtt(q01, a03)], [], [], [], nt(q01, a03)).
+process(16, [1, 2, 15], [constraint(t(A)@pis, A, [expression(in_set([t4]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a03)], [], [], [], nt(q01, a03)).
+process(17, [1, 2], [tcv(a04), gtt(q01, a04)], [], [], [], nt(q01, a04)).
+process(18, [1, 2, 17], [constraint(t(A)@pis, A, [expression(in_set([t1, t2, t3, t4]), list)]), constraint(n(B)@pis, B, [expression(in_set([n1, n2]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a04)], [], [], [], nt(q01, a04)).
+process(19, [1, 2, 17, 18], [constraint(n(A)@pis, A, [expression(in_set([n1, n2]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a04)], [t(_)@pis], [], [constraint(t(C)@pis, C, [expression(in_set([t1]), list)], default)], nt(q01, a04)).
+process(20, [1, 2, 17, 18], [constraint(n(A)@pis, A, [expression(in_set([n1, n2]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a04), constraint(t(C)@pis, C, [expression(in_set([t2, t3, t4]), list)])], [], [], [], nt(q01, a04)).
+
+{}
+cdss: The set of active processes is:
+:- dynamic active/1.
+
+active(process(34, [1, 2, 3, 5, 6, 8, 9, 10, 11, 21, 29, 32], [], [], [gtt(q01, a01)], [constraint(t(A)@pis, A, [expression(in_set([t1]), list)], revised), constraint(n(B)@pis, B, [expression(in_set([n0]), list)], revised), constraint(m(C)@pis, C, [expression(in_set([m0]), list)], revised), constraint(ex(a01, D)@cp, D, [expression(D#\=0, regular), expression(D#=1, regular), expression(D#=1, regular)], revised)], nt(q01, a01))).
+
+{}
+cdss: The set of suspended processes is:
+:- dynamic suspended/2.
+
+
+{}
+cdss: The set of terminated processes is:
+:- dynamic terminated/1.
+
+terminated(process(4, [1, 2, 3], [constraint(t(A)@pis, A, [expression(in_set([tis]), list)]), gtt(q01, a01)], [], [], [], nt(q01, a01))).
+terminated(process(7, [1, 2, 3, 5], [constraint(n(A)@pis, A, [expression(in_set([n0]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a01), constraint(t(C)@pis, C, [expression(in_set([t2]), list)])], [], [], [], nt(q01, a01))).
+terminated(process(14, [1, 2, 13], [constraint(t(A)@pis, A, [expression(in_set([t3]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a02)], [], [], [], nt(q01, a02))).
+terminated(process(16, [1, 2, 15], [constraint(t(A)@pis, A, [expression(in_set([t4]), list)]), constraint(n(B)@pis, B, [expression(in_set([n0]), list)]), constraint(m(C)@pis, C, [expression(in_set([m0]), list)]), gtt(q01, a03)], [], [], [], nt(q01, a03))).
+terminated(process(20, [1, 2, 17, 18], [constraint(n(A)@pis, A, [expression(in_set([n1, n2]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a04), constraint(t(C)@pis, C, [expression(in_set([t2, t3, t4]), list)])], [], [], [], nt(q01, a04))).
+terminated(process(28, [1, 2, 17, 18, 19], [constraint(n(A)@pis, A, [expression(in_set([n1, n2]), list)]), constraint(m(B)@pis, B, [expression(in_set([m0]), list)]), gtt(q01, a04)], [], [], [constraint(t(C)@pis, C, [expression(in_set([t1]), list)], revised)], nt(q01, a04))).
+terminated(process(33, [1, 2, 3, 5, 6, 8, 9, 10, 12, 24, 30], [constraint(ex(a01, A)@cp, A, [expression(A#\=0, regular), expression(A#\=1, regular)])], [], [gtt(q01, a01)], [constraint(t(B)@pis, B, [expression(in_set([t1]), list)], revised), constraint(n(C)@pis, C, [expression(in_set([n0]), list)], revised), constraint(m(D)@pis, D, [expression(in_set([m0]), list)], revised)], nt(q01, a01))).
+
+:- dynamic terminated/2.
+
+
+{}

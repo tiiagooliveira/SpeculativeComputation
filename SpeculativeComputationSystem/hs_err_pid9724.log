@@ -1,0 +1,180 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (os_windows_x86.cpp:143), pid=9724, tid=7516
+#  guarantee(result == EXCEPTION_CONTINUE_EXECUTION) failed: Unexpected result from topLevelExceptionFilter
+#
+# JRE version: Java(TM) SE Runtime Environment (7.0_45-b18) (build 1.7.0_45-b18)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.45-b08 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000001db0800):  JavaThread "main" [_thread_in_native, id=7516, stack(0x0000000001cb0000,0x0000000001db0000)]
+
+Stack: [0x0000000001cb0000,0x0000000001db0000]
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  org.rosuda.JRI.Rengine.rniParse(Ljava/lang/String;I)J+0
+j  org.rosuda.JRI.Rengine.eval(Ljava/lang/String;Z)Lorg/rosuda/JRI/REXP;+53
+j  org.rosuda.JRI.Rengine.eval(Ljava/lang/String;)Lorg/rosuda/JRI/REXP;+3
+j  bayesian.network.learning.ConstructNetwork.main([Ljava/lang/String;)V+14
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x000000000bb08800 JavaThread "Thread-0" [_thread_blocked, id=8752, stack(0x000000000bf30000,0x000000000c030000)]
+  0x000000000a1a8000 JavaThread "Service Thread" daemon [_thread_blocked, id=7840, stack(0x000000000b900000,0x000000000ba00000)]
+  0x000000000a197800 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=4204, stack(0x000000000b800000,0x000000000b900000)]
+  0x000000000a192800 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=5176, stack(0x000000000b700000,0x000000000b800000)]
+  0x000000000a191800 JavaThread "Attach Listener" daemon [_thread_blocked, id=3576, stack(0x000000000b600000,0x000000000b700000)]
+  0x000000000a18e000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=4272, stack(0x000000000b500000,0x000000000b600000)]
+  0x000000000a15a000 JavaThread "Finalizer" daemon [_thread_blocked, id=5852, stack(0x000000000b400000,0x000000000b500000)]
+  0x000000000a150800 JavaThread "Reference Handler" daemon [_thread_blocked, id=9384, stack(0x000000000b300000,0x000000000b400000)]
+=>0x0000000001db0800 JavaThread "main" [_thread_in_native, id=7516, stack(0x0000000001cb0000,0x0000000001db0000)]
+
+Other Threads:
+  0x000000000a14f000 VMThread [stack: 0x000000000b200000,0x000000000b300000] [id=6848]
+  0x000000000a1b1000 WatcherThread [stack: 0x000000000ba00000,0x000000000bb00000] [id=8632]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 38400K, used 1331K [0x00000007d5e80000, 0x00000007d8900000, 0x0000000800000000)
+  eden space 33280K, 4% used [0x00000007d5e80000,0x00000007d5fccd48,0x00000007d7f00000)
+  from space 5120K, 0% used [0x00000007d8400000,0x00000007d8400000,0x00000007d8900000)
+  to   space 5120K, 0% used [0x00000007d7f00000,0x00000007d7f00000,0x00000007d8400000)
+ ParOldGen       total 86016K, used 0K [0x0000000781c00000, 0x0000000787000000, 0x00000007d5e80000)
+  object space 86016K, 0% used [0x0000000781c00000,0x0000000781c00000,0x0000000787000000)
+ PSPermGen       total 21504K, used 2640K [0x000000077ca00000, 0x000000077df00000, 0x0000000781c00000)
+  object space 21504K, 12% used [0x000000077ca00000,0x000000077cc942a0,0x000000077df00000)
+
+Card table byte_map: [0x0000000004f70000,0x0000000005390000] byte_map_base: 0x000000000138b000
+
+Polling page: 0x00000000004c0000
+
+Code Cache  [0x0000000001eb0000, 0x0000000002120000, 0x0000000004eb0000)
+ total_blobs=187 nmethods=2 adapters=138 free_code_cache=48766Kb largest_free_block=49919808
+
+Compilation events (2 events):
+Event: 0.134 Thread 0x000000000a192800    2 %           org.rosuda.JRI.Rengine::<init> @ 74 (95 bytes)
+Event: 0.144 Thread 0x000000000a192800 nmethod 2% 0x0000000001f11510 code [0x0000000001f11660, 0x0000000001f11728]
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (5 events):
+Event: 0.040 Thread 0x0000000001db0800 Threw 0x00000007d5e8b168 at C:\re\jdk7u45\229\hotspot\src\share\vm\prims\jni.cpp:3991
+Event: 0.097 Thread 0x0000000001db0800 Threw 0x00000007d5ece2b8 at C:\re\jdk7u45\229\hotspot\src\share\vm\prims\jvm.cpp:1244
+Event: 0.105 Thread 0x0000000001db0800 Threw 0x00000007d5ed4f88 at C:\re\jdk7u45\229\hotspot\src\share\vm\prims\jvm.cpp:1244
+Event: 0.126 Thread 0x0000000001db0800 Threw 0x00000007d5eef018 at C:\re\jdk7u45\229\hotspot\src\share\vm\prims\jvm.cpp:1244
+Event: 0.133 Thread 0x0000000001db0800 Threw 0x00000007d5ef4820 at C:\re\jdk7u45\229\hotspot\src\share\vm\prims\jvm.cpp:1244
+
+Events (10 events):
+Event: 0.121 loading class 0x0000000001df60d0 done
+Event: 0.121 loading class 0x0000000001df6640
+Event: 0.121 loading class 0x0000000001df6640 done
+Event: 0.122 loading class 0x0000000001e01bc0
+Event: 0.122 loading class 0x0000000001e01bc0 done
+Event: 0.126 loading class 0x000000000a1e6c70
+Event: 0.126 loading class 0x000000000a1e6c70 done
+Event: 0.128 Thread 0x000000000bb08800 Thread added: 0x000000000bb08800
+Event: 0.133 loading class 0x000000000a1b28d0
+Event: 0.133 loading class 0x000000000a1b28d0 done
+
+
+Dynamic libraries:
+0x00007ff7e62f0000 - 0x00007ff7e6323000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x00007ffc5f3d0000 - 0x00007ffc5f57a000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffc5d7b0000 - 0x00007ffc5d8ea000 	C:\WINDOWS\system32\KERNEL32.DLL
+0x00007ffc5ca90000 - 0x00007ffc5cb9f000 	C:\WINDOWS\system32\KERNELBASE.dll
+0x00007ffc5b370000 - 0x00007ffc5b3f8000 	C:\WINDOWS\system32\apphelp.dll
+0x00007ffc52430000 - 0x00007ffc5247f000 	C:\WINDOWS\AppPatch\AppPatch64\AcGenral.DLL
+0x00007ffc5d3f0000 - 0x00007ffc5d497000 	C:\WINDOWS\system32\msvcrt.dll
+0x00007ffc5c570000 - 0x00007ffc5c59b000 	C:\WINDOWS\SYSTEM32\SspiCli.dll
+0x00007ffc5f280000 - 0x00007ffc5f2d1000 	C:\WINDOWS\system32\SHLWAPI.dll
+0x00007ffc5cc50000 - 0x00007ffc5cdc1000 	C:\WINDOWS\system32\USER32.dll
+0x00007ffc5cdd0000 - 0x00007ffc5cf48000 	C:\WINDOWS\system32\ole32.dll
+0x00007ffc5d8f0000 - 0x00007ffc5ed07000 	C:\WINDOWS\system32\SHELL32.dll
+0x00007ffc5bd50000 - 0x00007ffc5bd6e000 	C:\WINDOWS\SYSTEM32\USERENV.dll
+0x00007ffc5d280000 - 0x00007ffc5d325000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x00007ffc50400000 - 0x00007ffc5041b000 	C:\WINDOWS\SYSTEM32\MPR.dll
+0x00007ffc5ed20000 - 0x00007ffc5ee56000 	C:\WINDOWS\system32\RPCRT4.dll
+0x00007ffc5d390000 - 0x00007ffc5d3e7000 	C:\WINDOWS\SYSTEM32\sechost.dll
+0x00007ffc5cf50000 - 0x00007ffc5d126000 	C:\WINDOWS\SYSTEM32\combase.dll
+0x00007ffc5d130000 - 0x00007ffc5d275000 	C:\WINDOWS\system32\GDI32.dll
+0x00007ffc5c740000 - 0x00007ffc5c754000 	C:\WINDOWS\SYSTEM32\profapi.dll
+0x00007ffc5b040000 - 0x00007ffc5b0df000 	C:\WINDOWS\SYSTEM32\SHCORE.dll
+0x00007ffc5f390000 - 0x00007ffc5f3c4000 	C:\WINDOWS\system32\IMM32.DLL
+0x00007ffc5f140000 - 0x00007ffc5f279000 	C:\WINDOWS\system32\MSCTF.dll
+0x00007ffc5ac10000 - 0x00007ffc5ae6a000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.17031_none_6242a4b3ecbb55a1\COMCTL32.dll
+0x0000000063050000 - 0x0000000063122000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x0000000062880000 - 0x0000000063049000 	C:\Program Files\Java\jre7\bin\server\jvm.dll
+0x00007ffc539c0000 - 0x00007ffc539c9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffc54a10000 - 0x00007ffc54a2f000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffc5d4a0000 - 0x00007ffc5d4a7000 	C:\WINDOWS\system32\PSAPI.DLL
+0x00007ffc5ef20000 - 0x00007ffc5ef78000 	C:\WINDOWS\system32\WS2_32.dll
+0x00007ffc549e0000 - 0x00007ffc54a0a000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ffc5f380000 - 0x00007ffc5f389000 	C:\WINDOWS\system32\NSI.dll
+0x00007ffc5ca40000 - 0x00007ffc5ca8a000 	C:\WINDOWS\SYSTEM32\cfgmgr32.dll
+0x00007ffc5b5d0000 - 0x00007ffc5b5f6000 	C:\WINDOWS\SYSTEM32\DEVOBJ.dll
+0x0000000062870000 - 0x000000006287f000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x0000000062840000 - 0x0000000062868000 	C:\Program Files\Java\jre7\bin\java.dll
+0x0000000062820000 - 0x0000000062835000 	C:\Program Files\Java\jre7\bin\zip.dll
+0x000000000bf00000 - 0x000000000bf26000 	C:\Users\Tiago\Documents\R\win-library\3.0\rJava\jri\x64\jri.dll
+0x000000006c700000 - 0x000000006cabe000 	C:\Program Files\R\R-3.0.2\bin\x64\R.dll
+0x0000000064e80000 - 0x0000000064eda000 	C:\Program Files\R\R-3.0.2\bin\x64\Rblas.dll
+0x00000000641c0000 - 0x00000000641e5000 	C:\Program Files\R\R-3.0.2\bin\x64\Riconv.dll
+0x0000000063540000 - 0x00000000635b0000 	C:\Program Files\R\R-3.0.2\bin\x64\Rgraphapp.dll
+0x000000006f8c0000 - 0x000000006f8f2000 	C:\Program Files\R\R-3.0.2\bin\x64\Rzlib.dll
+0x00007ffc5a2d0000 - 0x00007ffc5a2da000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffc5f2e0000 - 0x00007ffc5f37a000 	C:\WINDOWS\system32\comdlg32.dll
+0x00007ffc55960000 - 0x00007ffc55967000 	C:\WINDOWS\SYSTEM32\MSIMG32.dll
+0x00007ffc5b410000 - 0x00007ffc5b531000 	C:\WINDOWS\system32\uxtheme.dll
+0x00007ffc4d6e0000 - 0x00007ffc4d778000 	C:\Program Files\Common Files\microsoft shared\ink\tiptsf.dll
+0x00007ffc5d6f0000 - 0x00007ffc5d7a7000 	C:\WINDOWS\system32\OLEAUT32.dll
+0x000000006e5c0000 - 0x000000006e5e6000 	C:\Program Files\R\R-3.0.2\library\utils\libs\x64\utils.dll
+0x0000000064a40000 - 0x0000000064a53000 	C:\Program Files\R\R-3.0.2\library\methods\libs\x64\methods.dll
+0x000000006fc80000 - 0x000000006fcd0000 	C:\Program Files\R\R-3.0.2\library\grDevices\libs\x64\grDevices.dll
+0x0000000063740000 - 0x0000000063784000 	C:\Program Files\R\R-3.0.2\library\graphics\libs\x64\graphics.dll
+0x0000000071100000 - 0x000000007119c000 	C:\Program Files\R\R-3.0.2\library\stats\libs\x64\stats.dll
+0x000000000e410000 - 0x000000000e699000 	C:\Program Files\R\R-3.0.2\bin\x64\Rlapack.dll
+
+VM Arguments:
+jvm_args: -Djava.library.path=C:\Users\Tiago\Documents\R\win-library\3.0\rJava\jri\x64 -Dfile.encoding=Cp1252 
+java_command: bayesian.network.learning.ConstructNetwork
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=C:\jade\lib\jade.jar;C:\Program Files\SICStus Prolog VC10 4.2.3\bin\jasper.jar;C:\Program Files\swipl\lib\jpl.jar;
+PATH=C:\Users\Tiago\Documents\R\win-library\3.0\rJava\jri\x64;C:\Program Files\Java\jre7\bin\server;C:\Program Files\R\R-3.0.2\bin\x64
+USERNAME=Tiago
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8 , 64 bit Build 9200 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, erms, ht, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 8267432k(3815208k free), swap 16656044k(9853564k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (24.45-b08) for windows-amd64 JRE (1.7.0_45-b18), built on Oct  8 2013 05:47:22 by "java_re" with unknown MS VC++:1600
+
+time: Wed May 07 18:11:09 2014
+elapsed time: 0 seconds
+

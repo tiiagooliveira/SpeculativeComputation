@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+    <context-param>
+        <param-name>javax.ws.rs.Application</param-name>
+        <param-value>cguide.MainCoreServer</param-value>
+    </context-param>
+    <context-param>
+        <param-name>resteasy.scan</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <filter>
+        <filter-name>AuthFilter</filter-name>
+        <filter-class>cguide.filters.AuthFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AuthFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <servlet>
+        <servlet-name>Resteasy</servlet-name>
+        <servlet-class>org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Resteasy</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+    <listener>
+        <listener-class>org.jboss.resteasy.plugins.server.servlet.ResteasyBootstrap</listener-class>
+    </listener>
+    <!--<servlet>
+        <servlet-name>Jersey Web Application</servlet-name>
+        <servlet-class>ServletContainer</servlet-class>
+        <init-param>
+            <param-name>javax.ws.rs.Application</param-name>
+            <param-value>MyApplication</param-value>
+        </init-param>
+    </servlet>-->
+
+    <!--<servlet>
+        <servlet-name>TheClass</servlet-name>
+        <servlet-class>com.mobilecity.coreserver.MainCoreServer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TheClass</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>-->
+
+</web-app>

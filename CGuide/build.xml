@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<project name="core" basedir="./">
+
+    <property name="enunciate.home"  value="c:/Libs/enunciate-1.27"/>
+
+    <path id="enunciate.classpath">
+        <fileset dir="./lib">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${enunciate.home}/lib">
+            <include name="*.jar"/>
+        </fileset>
+        <!--include (optional) spring module-->
+        <fileset dir="${enunciate.home}/lib/modules/spring">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${java.home}">
+            <include name="lib/tools.jar"/>
+        </fileset>
+    </path>
+
+    <taskdef name="enunciate" classname="org.codehaus.enunciate.main.EnunciateTask">
+        <classpath refid="enunciate.classpath"/>
+    </taskdef>
+
+    <!--<enunciate basedir="./src/com/mobilecity/coreserver/webservices">-->
+    <enunciate basedir="./src">
+        <include name="**/*.java"/>
+        <classpath refid="enunciate.classpath"/>
+        <export artifactId="war.file" destination="${basedir}/dist/core-doc.war"/>
+        <!--<export artifactId="war.file" destination="/media/Data/jboss-5.1.0.GA/server/default/deploy/core-doc.war"/>-->
+    </enunciate>
+
+</project>

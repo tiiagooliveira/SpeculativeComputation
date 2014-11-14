@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="CGuide:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/CGuide_war_exploded.war</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="CGuide/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="CGuide" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.6" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.2.4" />
+          <element id="library" level="project" name="Maven: net.sourceforge.owlapi:owlapi-api:3.4.3" />
+          <element id="library" level="project" name="Maven: net.sourceforge.owlapi:owlapi-apibinding:3.4.3" />
+          <element id="library" level="project" name="Maven: net.sourceforge.owlapi:owlapi-impl:3.4.3" />
+          <element id="library" level="project" name="Maven: net.sourceforge.owlapi:owlapi-parsers:3.4.3" />
+          <element id="library" level="project" name="Maven: net.sourceforge.owlapi:owlapi-tools:3.4.3" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
